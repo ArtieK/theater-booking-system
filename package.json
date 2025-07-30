@@ -1,0 +1,17 @@
+{
+  "name": "theater-booking-system",
+  "version": "1.0.0",
+  "description": "This project implements a full-featured theater booking database in PostgreSQL, including performance schedules, seat reservations, club memberships, and business logic.",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.15.6"
+  }
+}
