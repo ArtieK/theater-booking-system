@@ -1,5 +1,5 @@
 
-#Theater Booking System
+# Theater Booking System
 
 This project implements a full-featured theater booking database in PostgreSQL, including performance schedules, seat reservations, club memberships, and business logic.
 
