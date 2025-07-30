@@ -1,5 +1,5 @@
 
-# 🎭 Theater Booking System - Final Submission
+#Theater Booking System
 
 This project implements a full-featured theater booking database in PostgreSQL, including performance schedules, seat reservations, club memberships, and business logic.
 
@@ -18,14 +18,14 @@ This project implements a full-featured theater booking database in PostgreSQL, 
 
 ---
 
-## 🛠️ Running the Project
+## Running the Project
 
-### 1️⃣ Load Schema
+### 1.)Load Schema
 ```bash
 psql -U postgres -d theater_db -f schema.sql
 ```
 
-### 2️⃣ Load Sample Data
+### 2.)Load Sample Data
 In order:
 ```bash
 psql -U postgres -d theater_db -f data_reorganized_step1.sql
@@ -40,19 +40,19 @@ cat data_reorganized_step*.sql > data_full.sql
 psql -U postgres -d theater_db -f data_full.sql
 ```
 
-### 3️⃣ Load Logic (Triggers & Functions)
+### 3.)Load Logic (Triggers & Functions)
 ```bash
 psql -U postgres -d theater_db -f logic.sql
 ```
 
-### 4️⃣ Run Queries
+### 4.)Run Queries
 ```bash
 psql -U postgres -d theater_db -f queries.sql
 ```
 
 ---
 
-## ⚙️ Assumptions & Notes
+## Assumptions & Notes
 
 - Booking records **link seats and performances directly**, so no separate `PerformanceSeat` table was needed.
 - `Booking.final_price` is calculated automatically via a trigger based on `price_factor`.
@@ -63,6 +63,6 @@ psql -U postgres -d theater_db -f queries.sql
 
 ---
 
-## ✅ Final Notes
+##Final Notes
 
 All deliverables are validated to work in order. Reach out with any issues running your schema or data. Good luck and enjoy the show!
